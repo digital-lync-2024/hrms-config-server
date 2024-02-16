@@ -1,8 +1,19 @@
 #name of the service
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/hrms-eos
+   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: panni0310
+    url: jdbc:mysql://localhost:3306/hrms-eos?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&autoReconnect=true
+    username: root
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
 
 #server ports
 server:
