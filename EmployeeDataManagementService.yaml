@@ -14,6 +14,8 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
     show-sql: true
+  config:
+    import: custom.yaml
 
 #server ports
 server:
@@ -26,7 +28,7 @@ eureka:
       serverUrl:
         defaultZone: http://localhost:8761/eureka/
 
-#actuator        
+#actuator
 management:
   endpoints:
     web:
