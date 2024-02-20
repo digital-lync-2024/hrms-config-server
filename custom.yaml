@@ -1,2 +1,3 @@
 ports:
   service1: 8085
+  service2: 8086
