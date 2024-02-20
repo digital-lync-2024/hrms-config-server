@@ -19,7 +19,7 @@ spring:
 
 #server ports
 server:
-  port: ${ports.service1}
+  port: ${ports.service2}
 
 #eureka client config
 eureka:
