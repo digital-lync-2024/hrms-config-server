@@ -15,7 +15,7 @@ spring:
         format_sql: true
     show-sql: true
   config:
-    import: custom.yaml
+    import: env.yaml
 
 #server ports
 server:
