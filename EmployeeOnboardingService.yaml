@@ -1,6 +1,5 @@
-#name of the service
 spring:
-   datasource:
+  datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: panni0310
     url: jdbc:mysql://localhost:3306/hrms-eos?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&autoReconnect=true
@@ -15,18 +14,14 @@ spring:
         format_sql: true
     show-sql: true
 
-#server ports
 server:
   port: 8081
 
-#eureka client config
 eureka:
-  instance:
-    client:
-      serverUrl:
-        defaultZone: http://localhost:8761/eureka/
-        
-#actuator        
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 management:
   endpoints:
     web:
