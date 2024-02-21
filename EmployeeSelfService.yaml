@@ -1,3 +1,4 @@
+
 #name of the service
 spring:
   datasource:
@@ -17,9 +18,12 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/hrms-ess 
+  config:
+    import: env.yaml
+
 #server ports
 server:
-  port: 8082
+  port: ${ports.service3}
 
 #eureka client config
 eureka:
