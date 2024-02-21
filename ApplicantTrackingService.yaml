@@ -6,7 +6,7 @@ spring:
 
 #server ports
 server:
-  port: 8084
+  port: ${ports.service5}
 
 #eureka client config
 eureka:
