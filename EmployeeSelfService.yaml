@@ -1,11 +1,10 @@
-
-#name of the service
+#database configurations
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: panni0310
     url: jdbc:mysql://localhost:3306/hrms-ess?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&autoReconnect=true
-    username: root
+    username: ${mysql.user.name}
+    password: ${mysql.user.password}
   jpa:
     generate-ddl: true
     hibernate:
