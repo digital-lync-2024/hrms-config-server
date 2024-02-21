@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: panni0310
+    password: ${}
     url: jdbc:mysql://localhost:3306/hrms-edms?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&autoReconnect=true
     username: root
   jpa:
@@ -19,7 +19,7 @@ spring:
 
 #server ports
 server:
-  port: ${ports.service2}
+  port: ${ports.service1}
 
 #eureka client config
 eureka:
