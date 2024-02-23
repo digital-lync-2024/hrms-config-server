@@ -21,10 +21,10 @@ spring:
 server:
   port: ${ports.service2}
 
-#eureka client config
+# Eureka Client Configuration
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://${sr_ip:localhost}:8761/eureka/
 
 #actuator 
