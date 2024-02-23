@@ -25,7 +25,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${sr_ip:localhost}:8761/eureka/
 
 #actuator 
 management:
