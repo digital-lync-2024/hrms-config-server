@@ -21,12 +21,11 @@ spring:
 server:
   port: ${ports.service1}
 
-#eureka client config
+# Eureka Client Configuration
 eureka:
-  instance:
-    client:
-      serverUrl:
-        defaultZone: http://${sr_ip:localhost}:8761/eureka/
+  client:
+    service-url:
+      defaultZone: http://${sr_ip:localhost}:8761/eureka/
 
 #actuator
 management:
