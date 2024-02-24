@@ -19,7 +19,7 @@ spring:
 
 #server ports
 server:
-  port: ${ports.service1}
+  port: 8080
 
 # Eureka Client Configuration
 eureka:
