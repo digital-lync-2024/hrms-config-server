@@ -2,9 +2,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/hrms-ats
-  config:
-    import: env.yaml
+      uri: mongodb://${mongo_ip:localhost}:27017/hrms-ats
+  
 
 #server ports
 server:
